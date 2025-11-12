@@ -31,5 +31,6 @@ build/
 
 ### VS Code ###
 .vscode/
-### uploads ###
-upload
+### ignore uploads ###
+.env
+/upload/
