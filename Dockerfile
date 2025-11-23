@@ -8,5 +8,5 @@ RUN ./mvnw clean package -DskipTests
 FROM eclipse-temurin:21-jdk
 WORKDIR /app
 COPY --from=build /app/target/cloudshare-0.0.1-SNAPSHOT.jar cloudshare.v1.0.jar
-EXPOSE 9090
+EXPOSE 8080
 ENTRYPOINT ["java", "-jar", "cloudshare.v1.0.jar"]
